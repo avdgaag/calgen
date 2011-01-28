@@ -114,3 +114,7 @@ class Calendar {
     }
 }
 
+require dirname(__FILE__) . '/Calendar/Day.php';
+require dirname(__FILE__) . '/Calendar/Week.php';
+require dirname(__FILE__) . '/Calendar/TableFormatter.php';
+require dirname(__FILE__) . '/Calendar/Event.php';

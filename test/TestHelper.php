@@ -5,6 +5,9 @@
  * and configuration.
  */
 
+// Require system under test
+require dirname(__FILE__) . '/../lib/Calendar.php';
+
 /**
  * Generic project-specific test case, where helper methods available
  * to all other test cases can be defined.
