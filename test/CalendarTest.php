@@ -1,6 +1,6 @@
 <?php
 
-class CalendarTest extends PHPUnit_Framework_TestCase {
+class CalendarTest extends CalendarTestCase {
     /**
      * @todo replace this test with something sensible
      */
