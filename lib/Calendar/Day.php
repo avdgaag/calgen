@@ -1,6 +1,6 @@
 <?php
 
-namespace Calendar;
+namespace OrangeCubed\Calendar;
 
 /**
  * Represents a single day in the calender. Essentially a placeholder for

@@ -1,6 +1,6 @@
 <?php
 
-namespace Calendar;
+namespace OrangeCubed\Calendar;
 
 /**
  * Formatter object that can render a Calendar object to an HTML table.

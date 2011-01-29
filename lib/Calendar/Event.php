@@ -1,6 +1,6 @@
 <?php
 
-namespace Calendar;
+namespace OrangeCubed\Calendar;
 
 class Event {
     public $title;
