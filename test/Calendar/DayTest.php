@@ -71,7 +71,11 @@ class DayTest extends CalendarTestCase {
     }
 
     public function testShouldIndicateEvents() {
-
+        $day = new OrangeCubed\Calendar\Day(29, 1, 2011);
+        $this->assertFalse($day->has_event);
+        $event = (object)array('category' => 'foo');
+        $day->setEvents(array($event));
+        $this->assertTrue($day->has_event);
     }
 }
 
