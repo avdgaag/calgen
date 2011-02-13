@@ -129,7 +129,7 @@ class Day {
         $this->is_weekend           = $this->weekday == 0 || $this->weekday == 6;
         $today                      = getdate();
         $this->is_today             = $this->month == $today['mon'] && $this->year == $today['year'] && $this->day == $today['mday'];
-        $this->is_past              = $this->month <= $today['mon'] && $this->year <= $today['year'] && $this->day < $today['mday'];
+        $this->is_past              = $this->year < $today['year'] || ($this->year == $today['year'] && $this->month < $today['mon']) || ($this->year == $today['year'] && $this->month == $today['mon'] && $this->day < $today['mday']);
         $this->is_future            = (!$this->is_today && !$this->is_past);
         $this->has_event            = count($this->events) > 0;
         foreach($this->events as $event) {
