@@ -1,11 +1,15 @@
 <?php
 
 class WeekTest extends CalendarTestCase {
-    /**
-     * @todo replace this test with something sensible
-     */
-    public function testTruth() {
-        $this->assertTrue(true);
+    public function testShouldStartWithNoDays() {
+        $this->markTestIncomplete();
+    }
+
+    public function testShouldAddOneDay() {
+        $this->markTestIncomplete();
+    }
+
+    public function testShouldRememberAddedDays() {
+        $this->markTestIncomplete();
     }
 }
-

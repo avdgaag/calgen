@@ -1,11 +1,8 @@
 <?php
 
 class EventTest extends CalendarTestCase {
-    /**
-     * @todo replace this test with something sensible
-     */
-    public function testTruth() {
-        $this->assertTrue(true);
+    public function testIsOnDate() {
+        $this->markTestIncomplete();
     }
 }
 
