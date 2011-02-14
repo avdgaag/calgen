@@ -124,6 +124,7 @@ class Calendar {
     }
 }
 
+require dirname(__FILE__) . '/Calendar/Exceptions.php';
 require dirname(__FILE__) . '/Calendar/Day.php';
 require dirname(__FILE__) . '/Calendar/Week.php';
 require dirname(__FILE__) . '/Calendar/TableFormatter.php';

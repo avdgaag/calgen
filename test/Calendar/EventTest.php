@@ -51,22 +51,4 @@ class EventTest extends CalendarTestCase {
         $this->event->category = 'foo';
         $this->assertEquals('foo', $this->event->category);
     }
-
-    public function testShouldNotBeAbleToChangeTheDay() {
-        $this->markTestIncomplete();
-        $this->setExpectedException('PHPUnit_Framework_Error');
-        $this->event->day = 10;
-    }
-
-    public function testShouldNotBeAbleToChangeTheMonth() {
-        $this->markTestIncomplete();
-        $this->setExpectedException('PHPUnit_Framework_Error');
-        $this->event->month = 4;
-    }
-
-    public function testShouldNotBeAbleToChangeTheYear() {
-        $this->markTestIncomplete();
-        $this->setExpectedException('PHPUnit_Framework_Error');
-        $this->event->year = 2010;
-    }
 }
