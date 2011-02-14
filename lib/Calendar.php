@@ -22,7 +22,7 @@ class Calendar {
      * Library version number in format major.minor.patch
      * @var String
      */
-    const VERSION = '0.0.0';
+    const VERSION = '0.1.0';
 
     /**
      * The calendar month number (e.g. 1)
