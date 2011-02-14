@@ -75,6 +75,10 @@ class Calendar {
 
     /**
      * Generate all the Week and Day objects for this calendar.
+     * This needs to be run before trying to render this instance into some
+     * kind of output.
+     *
+     * @see render()
      */
     private function generate() {
         $week = new Week();
