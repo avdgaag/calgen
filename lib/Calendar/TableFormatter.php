@@ -5,7 +5,7 @@ namespace OrangeCubed\Calendar;
 /**
  * Formatter object that can render a Calendar object to an HTML table.
  */
-class TableFormatter {
+class TableFormatter implements Formatter {
     /**
      * The calender to generate HTML for
      * @var Calendar
@@ -18,7 +18,7 @@ class TableFormatter {
      * @param Calendar $calender
      * @return String
      */
-    public function render(Calendar $calender) {
+    public function render(\OrangeCubed\Calendar $calender) {
         $this->calendar = $calender;
         $output = <<<EOS
 <table cellspacing="0" cellpadding="0" class="calendar">

@@ -16,3 +16,15 @@ class CalendarTestCase extends \PHPUnit_Framework_TestCase {
 
 }
 
+class MockFormatter implements OrangeCubed\Calendar\Formatter {
+    private $return_value;
+
+    public function __construct($return_value) {
+        $this->return_value = $return_value;
+    }
+
+    public function render(\OrangeCubed\Calendar $calendar) {
+        return $this->return_value;
+    }
+}
+
