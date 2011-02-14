@@ -1,11 +1,19 @@
 <?php
 
+/**
+ * Defines Day class
+ *
+ * @package Calendar
+ */
+
 namespace OrangeCubed\Calendar;
 
 /**
  * Represents a single day in the calender. Essentially a placeholder for
  * a bunch of flags, such as whether it is a weekend day, a weekday, today
  * or the first day of a week.
+ *
+ * @package Calendar
  */
 class Day {
     /**

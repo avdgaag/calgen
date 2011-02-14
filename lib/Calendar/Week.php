@@ -1,4 +1,9 @@
 <?php
+/**
+ * Defines Week class
+ *
+ * @package Calendar
+ */
 
 namespace OrangeCubed\Calendar;
 
@@ -7,6 +12,8 @@ namespace OrangeCubed\Calendar;
  * as calendars are typically displayed in table-like fashion.
  *
  * @see Day()
+ *
+ * @package Calendar
  */
 class Week {
     /**

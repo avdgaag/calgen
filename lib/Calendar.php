@@ -1,4 +1,9 @@
 <?php
+/**
+ * Defines Calendar class and loads all other library parts
+ *
+ * @package Calendar
+ */
 
 namespace OrangeCubed;
 
@@ -8,6 +13,8 @@ namespace OrangeCubed;
  *
  * You can render a Calendar object to some form of output using a formatter
  * object.
+ *
+ * @package Calendar
  */
 class Calendar {
 

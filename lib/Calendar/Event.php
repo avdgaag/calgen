@@ -1,4 +1,9 @@
 <?php
+/**
+ * Defines Event class
+ *
+ * @package Calendar
+ */
 
 namespace OrangeCubed\Calendar;
 
@@ -15,6 +20,8 @@ namespace OrangeCubed\Calendar;
  *     echo $event->day; # => 12
  *     $event->day = 13; # => error
  *
+ *
+ * @package Calendar
  */
 class Event {
     /**

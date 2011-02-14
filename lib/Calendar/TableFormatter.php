@@ -1,9 +1,16 @@
 <?php
+/**
+ * Defines TableFormatter class
+ *
+ * @package Calendar
+ */
 
 namespace OrangeCubed\Calendar;
 
 /**
  * Formatter object that can render a Calendar object to an HTML table.
+ *
+ * @package Calendar
  */
 class TableFormatter implements Formatter {
     /**
