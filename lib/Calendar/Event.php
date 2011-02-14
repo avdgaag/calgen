@@ -2,21 +2,65 @@
 
 namespace OrangeCubed\Calendar;
 
+/**
+ * An event is a collection of properties that can trigger a day on a calendar
+ * to get highlighted. An event has a date, so implicitly a single day on the
+ * calendar can have any number of events associated with it.
+ *
+ * An event must have a date; other properties are optional.
+ *
+ * Note that the parsed date is available as read-only properties, like so:
+ *
+ *     $event = new Event('2011-02-12');
+ *     echo $event->day; # => 12
+ *     $event->day = 13; # => error
+ *
+ */
 class Event {
+    /**
+     * This event's summary title.
+     * @var String
+     */
     public $title;
-    public $location;
-    public $date;
-    public $category;
-    private $day;
-    private $month;
-    private $year;
 
     /**
-     * @todo make sure to adapt the calling script to new constructor
+     * This event's location.
+     * @var String
      */
+    public $location;
+
+    /**
+     * This event's internal timestamp.
+     * @var String
+     */
+    private $date;
+
+    /**
+     * This event's category.
+     * @var String
+     */
+    public $category;
+
+    /**
+     * Cached parse result for this event's month day number.
+     * @var String
+     */
+    private $day;
+
+    /**
+     * Cached parse result for this event's month number.
+     * @var String
+     */
+    private $month;
+
+    /**
+     * Cached parse result for this event's year.
+     * @var String
+     */
+    private $year;
+
     public function __construct($date) {
-        $this->date  = $date;
-        $d           = strtotime($this->date);
+        $d           = strtotime($date);
         if($d === false) throw new \InvalidArgumentException('The date ' . print_r($date, true) . ' cannot be parsed.');
         $d           = getdate($d);
         $this->day   = $d['mday'];
@@ -25,9 +69,7 @@ class Event {
     }
 
     public function __get($name) {
-        if(property_exists($this, $name)) {
-            return $this->$name;
-        }
+        if(property_exists($this, $name)) return $this->$name;
     }
 
     /**
